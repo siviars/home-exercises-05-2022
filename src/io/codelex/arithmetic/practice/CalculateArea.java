@@ -69,8 +69,8 @@ public class CalculateArea {
 
 
         // Display output
-        System.out.println("The circle's area is " + (Math.PI * radius * 2));
-        //         + Geometry.areaOfCircle(radius));
+        System.out.println("The circle's area is " +
+                 Geometry.areaOfCircle(radius));
     }
 
     public static void calculateRectangleArea() {
@@ -99,8 +99,8 @@ public class CalculateArea {
         }
 
         // Display output
-        System.out.println("The rectangle's area is " + (length * width));
-        //         + Geometry.areaOfRectangle(length, width));
+        System.out.println("The rectangle's area is " +
+                Geometry.areaOfRectangle(length, width));
     }
 
     public static void calculateTriangleArea() {
@@ -129,7 +129,7 @@ public class CalculateArea {
         }
 
         // Display the triangle's area.
-        System.out.println("The triangle's area is " + (base * height * 0.5));
-        //         + Geometry.areaOfTriangle(base, height));
+        System.out.println("The triangle's area is " +
+                  Geometry.areaOfTriangle(base, height));
     }
 }

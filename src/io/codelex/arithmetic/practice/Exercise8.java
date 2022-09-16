@@ -4,7 +4,7 @@ public class Exercise8 {
 
     static double count;
 
-    public static void Payment(double basePay, int hoursWorked) {
+    public static void payment(double basePay, int hoursWorked) {
         if (basePay < 8) {
             System.out.println("Error, base pay < $8.00");
         } else if (hoursWorked > 60) {
@@ -20,9 +20,9 @@ public class Exercise8 {
     }
 
     public static void main(String[] args) {
-        Payment(7.50, 35);
-        Payment(8.20, 47);
-        Payment(10, 73);
+        payment(7.50, 35);
+        payment(8.20, 47);
+        payment(10, 73);
 
 
     }
