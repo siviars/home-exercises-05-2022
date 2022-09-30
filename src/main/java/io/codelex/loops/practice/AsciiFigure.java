@@ -4,13 +4,12 @@ import java.util.Scanner;
 
 public class AsciiFigure {
     public static void main(String[] args) {
-        int count, heig, slash, asterisk;
         int leng = 0;
 
         Scanner in = new Scanner(System.in);
         System.out.println("Write figure size");
-        heig = in.nextInt();
-        count = heig / 2;
+        int heig = in.nextInt();
+        int count = heig / 2;
 
         //count figure length
         for (int i = 1; i <= count; i++) {
@@ -18,8 +17,8 @@ public class AsciiFigure {
         }
 
         //Draw figure
-        slash = leng / 2;
-        asterisk = 0;
+        int slash = leng / 2;
+        int asterisk = 0;
         for (int k = 1; k <= heig; k++) {
             for (int l = 1; l <= slash; l++) {
                 System.out.print("/");
