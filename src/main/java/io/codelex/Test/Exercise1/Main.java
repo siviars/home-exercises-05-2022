@@ -1,7 +1,5 @@
 package io.codelex.Test.Exercise1;
 
-import java.math.BigDecimal;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -11,7 +9,5 @@ public class Main {
         debit.addMoney(10000);
         System.out.println(credit.getBalance());
         System.out.println(debit.getBalance());
-
-
     }
 }

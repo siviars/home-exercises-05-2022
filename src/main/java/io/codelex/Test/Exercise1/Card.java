@@ -6,29 +6,28 @@ public abstract class Card {
     String number;
     String owner;
     int CCVcode;
-    int balance;
+    BigDecimal balance;
 
-    public Card(String number, String owner, int CCVcode, int balance) {
+    public Card(String number, String owner, int CCVcode, double balance) {
         this.number = number;
         this.owner = owner;
         this.CCVcode = CCVcode;
-        this.balance = balance;
+        this.balance =  new BigDecimal(balance);
     }
 
-    public void addMoney(int add) {
-        balance = balance+add;
+    public void addMoney(double add) {
+        balance = balance.add(new BigDecimal(add));
     }
 
-    public void takeMoney(int take) {
-
-        if (take > balance) {
+    public void takeMoney(double take) {
+        if (balance.compareTo(new BigDecimal(take)) < 0) {
             System.out.println("Not enough money");
         } else {
-            balance = balance-take;
+            balance = balance.subtract(new BigDecimal(take));
         }
     }
 
-    public int getBalance() {
+    public BigDecimal getBalance() {
         return balance;
     }
 
