@@ -1,7 +1,8 @@
 package io.codelex.classesandobjects.practice.Exercise9;
 
 public class Point {
-    private int x, y;
+    private int x;
+    private int y;
 
     public static void main(String[] args) {
         Point p1 = new Point(5, 2);

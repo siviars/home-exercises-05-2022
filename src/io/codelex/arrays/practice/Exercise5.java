@@ -6,8 +6,8 @@ public class Exercise5 {
     public static void main(String[] args) {
         int[] myArray = {25, 14, 56, 15, 36, 56, 77, 18, 29, 49};
 
-        int indexOfElement36 = -1;
-        int indexOfElement29 = -1;
+        int indexOfElement36 = 0;
+        int indexOfElement29 = 0;
 
         // fixme
         for (int i = 0; i < myArray.length; i++) {
