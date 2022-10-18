@@ -7,6 +7,8 @@ public class Car {
     private double startKilometers;
     private double endKilometers;
     private double liters;
+    private final int max = 15;
+    private final int min = 5;
 
     public Car(double startKilometers) {
         this.startKilometers = startKilometers;
@@ -23,11 +25,11 @@ public class Car {
     }
 
     public boolean gasHog() {
-        return calculateConsumption() > 15;
+        return calculateConsumption() > max;
     }
 
     public boolean economyCar() {
-        return calculateConsumption() < 5;
+        return calculateConsumption() < min;
     }
 
     public void fillUp(double mileage, double liters) {

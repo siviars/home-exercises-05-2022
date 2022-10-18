@@ -37,13 +37,13 @@ public class SavingsAccount {
     }
 
     private void subtractingWithdrawal() {
-        this.balance = this.balance - this.withdrawn;
-        this.totalWithdrawn = this.totalWithdrawn + this.withdrawn;
+        this.balance -= this.withdrawn;
+        this.totalWithdrawn += this.withdrawn;
     }
 
     private void addingDeposit() {
-        this.balance = this.balance + this.deposit;
-        this.totalDeposit = this.totalDeposit + this.deposit;
+        this.balance += this.deposit;
+        this.totalDeposit += this.deposit;
     }
 
     private void addingInterest() {

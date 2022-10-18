@@ -4,39 +4,38 @@ package io.codelex.classesandobjects.practice;
 // information including name and balance of money.
 
 public class BankAccount {
-    public String name;
-    public double balance;
+    private String name;
+    private double balance;
 
     public static void main(String[] args) {
         BankAccount benben = new BankAccount("Benson", 17.25);
-        benben.toString();
+        benben.printString();
         benben.deposit(100);
-        benben.toString();
+        benben.printString();
         benben.withdraw(200);
-        benben.toString();
+        benben.printString();
     }
 
-    public BankAccount(String name, double balance) {
+    private BankAccount(String name, double balance) {
         this.name = name;
         this.balance = balance;
     }
 
-    public String toString() {
+    public void printString() {
         if (this.balance < 0) {
             double balance2 = this.balance * (-1);
             System.out.println(this.name + ", -$" + balance2);
         } else {
             System.out.println(this.name + ", $" + this.balance);
         }
-        return null;
     }
 
-    public final void deposit(double amount) {
-        this.balance = this.balance + amount;
+    private final void deposit(double amount) {
+        this.balance += amount;
     }
 
-    public final void withdraw(double amount) {
-        this.balance = this.balance - amount;
+    private final void withdraw(double amount) {
+        this.balance -= amount;
     }
 
 }
