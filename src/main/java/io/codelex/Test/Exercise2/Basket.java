@@ -4,19 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Basket<T> {
-    T items;
 
     private List<T> basket = new ArrayList<>();
 
     public void addToBasket(T item) {
         if (basket.size() == 10) {
-            System.out.println("Basket is full");
-        } else if (basket.size() > 0) {
-            if (basket.get(0) == item) {
-                basket.add(item);
-            } else {
-                System.out.println("Not the same item");
-            }
+            throw new BasketFullException("Basket is full");
         } else {
             basket.add(item);
         }
@@ -24,12 +17,14 @@ public class Basket<T> {
 
     public void removeFromBasket(T item) {
         if (basket.size() == 0) {
-            System.out.println("Basket is emty");
-        } else if (basket.get(0) == item) {
-            basket.remove(basket.size() - 1);
+            throw new BasketEmptyException("Basket is empty");
         } else {
-            System.out.println("In basket not such item");
+            basket.remove(item);
         }
+    }
+
+    public int getBasketSize() {
+        return basket.size();
     }
 
     @Override
