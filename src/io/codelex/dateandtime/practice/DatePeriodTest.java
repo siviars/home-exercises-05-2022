@@ -15,6 +15,6 @@ public class DatePeriodTest {
         DatePeriod secondPeriod = new DatePeriod(secondStart, secondEnd);
 
         DatePeriod overlap = firstPeriod.intersection(secondPeriod);
-        System.out.println(overlap.start + " - " + overlap.end);
+        System.out.println(overlap.getStart() + " - " + overlap.getEnd());
     }
 }

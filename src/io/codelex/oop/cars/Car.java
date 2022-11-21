@@ -4,13 +4,14 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class Car {
-    String name;
-    String model;
-    EngineType engineType;
-    int price;
-    int year;
-    Manufacturer manufacturers;
-    ArrayList<Manufacturer> manufacturer = new ArrayList<>();
+
+    private String name;
+    private String model;
+    private EngineType engineType;
+    private int price;
+    private int year;
+    private Manufacturer manufacturers;
+    private ArrayList<Manufacturer> manufacturer = new ArrayList<>();
 
     public Car(String name, String model, EngineType engineType, int price, int year, Manufacturer manufacturers) {
         this.name = name;
@@ -95,7 +96,9 @@ public class Car {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Car car = (Car) o;
-        return price == car.price && year == car.year && Objects.equals(name, car.name) && Objects.equals(model, car.model) && Objects.equals(engineType, car.engineType) && Objects.equals(manufacturer, car.manufacturer);
+        return price == car.price && year == car.year && Objects.equals(name, car.name)
+                && Objects.equals(model, car.model) && Objects.equals(engineType, car.engineType)
+                && Objects.equals(manufacturer, car.manufacturer);
     }
 
     @Override

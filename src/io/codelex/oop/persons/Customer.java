@@ -19,6 +19,6 @@ public class Customer extends Person {
 
     @Override
     public String getInfo() {
-        return firstName + " " + lastName + " " + customerId + " " + purchaseCount + " purchases";
+        return getFirstName() + " " + getLastName() + " " + customerId + " " + purchaseCount + " purchases";
     }
 }

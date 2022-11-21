@@ -1,7 +1,7 @@
-package io.codelex.oop.Exercise9_10;
+package io.codelex.oop.exercise9and10;
 
 public class Qube extends ThreeDShape {
-    double side;
+    private double side;
 
     public Qube(double side) {
         this.side = side;

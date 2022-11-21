@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.stream.Collectors;
 
-
 public class CarService {
     public ArrayList<Car> carsList;
 
@@ -58,22 +57,22 @@ public class CarService {
     }
 
     public void sortByManufacturer(String manufacturer) {
-        System.out.println(carsList.stream().filter(car -> car.getManufacturers().name == manufacturer).toList());
+        System.out.println(carsList.stream().filter(car -> car.getManufacturers().getName() == manufacturer).toList());
     }
 
     public void sortByManufacturerYear(int manufacturerYear, String compare) {
         if (compare.equals("<")) {
-            System.out.println(carsList.stream().filter(car -> car.getManufacturers().year < manufacturerYear).toList());
+            System.out.println(carsList.stream().filter(car -> car.getManufacturers().getYear() < manufacturerYear).toList());
         } else if (compare.equals(">")) {
-            System.out.println(carsList.stream().filter(car -> car.getManufacturers().year > manufacturerYear).toList());
+            System.out.println(carsList.stream().filter(car -> car.getManufacturers().getYear() > manufacturerYear).toList());
         } else if (compare.equals("<=")) {
-            System.out.println(carsList.stream().filter(car -> car.getManufacturers().year <= manufacturerYear).toList());
+            System.out.println(carsList.stream().filter(car -> car.getManufacturers().getYear() <= manufacturerYear).toList());
         } else if (compare.equals("<=")) {
-            System.out.println(carsList.stream().filter(car -> car.getManufacturers().year <= manufacturerYear).toList());
+            System.out.println(carsList.stream().filter(car -> car.getManufacturers().getYear() <= manufacturerYear).toList());
         } else if (compare.equals("=")) {
-            System.out.println(carsList.stream().filter(car -> car.getManufacturers().year == manufacturerYear).toList());
+            System.out.println(carsList.stream().filter(car -> car.getManufacturers().getYear() == manufacturerYear).toList());
         } else if (compare.equals("!=")) {
-            System.out.println(carsList.stream().filter(car -> car.getManufacturers().year != manufacturerYear).toList());
+            System.out.println(carsList.stream().filter(car -> car.getManufacturers().getYear() != manufacturerYear).toList());
         } else {
             System.out.println("Input information incorrect!");
         }

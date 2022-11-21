@@ -1,9 +1,9 @@
-package io.codelex.oop.Exercise9_10;
+package io.codelex.oop.exercise9and10;
 
 public class Cone extends ThreeDShape {
 
-    double height;
-    double radius;
+    private double height;
+    private double radius;
 
     public Cone(double height,double radius) {
         this.height = height;

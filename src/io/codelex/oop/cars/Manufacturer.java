@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class Manufacturer extends ArrayList<Manufacturer> {
-    String name;
-    int year;
-    String country;
+    private String name;
+    private int year;
+    private String country;
 
     public Manufacturer(String name, int year, String country) {
         this.name = name;

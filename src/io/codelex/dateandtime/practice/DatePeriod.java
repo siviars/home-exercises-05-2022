@@ -4,13 +4,23 @@ import java.time.LocalDate;
 
 public class DatePeriod {
 
-    boolean test = false;
-    LocalDate start, startResult;
-    LocalDate end, endResult;
+    private boolean test = false;
+    private LocalDate start;
+    private LocalDate startResult;
+    private LocalDate end;
+    private LocalDate endResult;
 
     public DatePeriod(LocalDate start, LocalDate end) {
         this.start = start;
         this.end = end;
+    }
+
+    public LocalDate getStart() {
+        return start;
+    }
+
+    public LocalDate getEnd() {
+        return end;
     }
 
     public DatePeriod intersection(DatePeriod name) {
@@ -29,7 +39,7 @@ public class DatePeriod {
         }
     }
 
-    public boolean checkPeriod(DatePeriod name) {
+    private boolean checkPeriod(DatePeriod name) {
         if (start.isBefore(name.end) && end.isAfter(name.start)) {
             test = true;
         } else {
