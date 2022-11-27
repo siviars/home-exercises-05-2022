@@ -1,10 +1,10 @@
-package io.codelex.oop.Exercise9_10;
+package io.codelex.oop.exercise9and10;
 
 public class Triangle extends Shape {
 
-    double firstSide;
-    double secondSide;
-    double thirdSide;
+    private double firstSide;
+    private double secondSide;
+    private double thirdSide;
 
     public Triangle(double firstSide, double secondSide, double thirdSide) {
         this.firstSide = firstSide;

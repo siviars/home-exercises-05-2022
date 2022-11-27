@@ -1,9 +1,9 @@
-package io.codelex.oop.Exercise9_10;
+package io.codelex.oop.exercise9and10;
 
 public class Rectangle extends Shape {
 
-    double with;
-    double height;
+    private double with;
+    private double height;
 
     public Rectangle(double with, double height) {
         this.with = with;

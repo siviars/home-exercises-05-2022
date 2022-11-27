@@ -1,7 +1,7 @@
-package io.codelex.oop.Exercise9_10;
+package io.codelex.oop.exercise9and10;
 
 public class Hexagon extends Shape {
-    double side;
+    private double side;
 
     public Hexagon(double side) {
         this.side = side;

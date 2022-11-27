@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 public class Exercise1 {
-     private static String first;
+    private static String first;
     private static String second;
     private static LocalDate firstDate;
     private static LocalDate secondDate;
@@ -21,7 +21,7 @@ public class Exercise1 {
         second = in.nextLine();
         secondDate = formatDate(second);
 
-        int workHours = (int) (firstDate.datesUntil(secondDate).filter(day->day.getDayOfWeek().getValue()<=5).count() * HOURS);
+        int workHours = (int) (firstDate.datesUntil(secondDate).filter(day -> day.getDayOfWeek().getValue() <= 5).count() * HOURS);
         System.out.println("Employee work " + workHours + " hours");
 
     }

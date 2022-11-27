@@ -15,7 +15,7 @@ public class Employee extends Person {
 
     @Override
     public String getInfo() {
-        return firstName + " " + lastName + " " + position + " work experience " + getWorkExperience() + " years";
+        return getFirstName() + " " + getFirstName() + " " + position + " work experience " + getWorkExperience() + " years";
     }
 
     public int getWorkExperience() {

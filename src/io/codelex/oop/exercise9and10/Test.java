@@ -1,4 +1,4 @@
-package io.codelex.oop.Exercise9_10;
+package io.codelex.oop.exercise9and10;
 
 public class Test {
     public static void main(String[] args) {
