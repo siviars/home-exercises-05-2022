@@ -4,9 +4,11 @@ import java.time.LocalDate;
 
 public class DatePeriod {
 
-    boolean test = false;
-    LocalDate start, startResult;
-    LocalDate end, endResult;
+    private boolean test = false;
+    private LocalDate start;
+    private LocalDate startResult;
+    private LocalDate end;
+    private LocalDate endResult;
 
     public DatePeriod(LocalDate start, LocalDate end) {
         this.start = start;
@@ -29,7 +31,7 @@ public class DatePeriod {
         }
     }
 
-    public boolean checkPeriod(DatePeriod name) {
+    private boolean checkPeriod(DatePeriod name) {
         if (start.isBefore(name.end) && end.isAfter(name.start)) {
             test = true;
         } else {
