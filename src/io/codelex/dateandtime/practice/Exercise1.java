@@ -5,8 +5,11 @@ import java.util.Scanner;
 
 
 public class Exercise1 {
-    private static String first, second;
-    private static LocalDate firstDate, secondDate;
+     private static String first;
+    private static String second;
+    private static LocalDate firstDate;
+    private static LocalDate secondDate;
+    private static final int HOURS = 8;
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -18,8 +21,8 @@ public class Exercise1 {
         second = in.nextLine();
         secondDate = formatDate(second);
 
-        int workHours = (int) (firstDate.datesUntil(secondDate).filter(day->day.getDayOfWeek().getValue()<=5).count()*8);
-        System.out.println("Employee work "+ workHours+" hours");
+        int workHours = (int) (firstDate.datesUntil(secondDate).filter(day->day.getDayOfWeek().getValue()<=5).count() * HOURS);
+        System.out.println("Employee work " + workHours + " hours");
 
     }
 
