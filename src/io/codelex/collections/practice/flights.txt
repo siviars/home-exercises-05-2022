@@ -1,0 +1,45 @@
+Amsterdam -> Berlin
+Warszawa -> Tallin
+
+Tallin -> Madrid
+Berlin -> Paris
+Anchorage -> Amsterdam
+Amsterdam -> Kaunas
+Riga -> Warszawa
+
+Paris -> Warszawa
+Berlin -> Kaunas
+Madrid -> New York
+Tallin -> New York
+Riga -> Tallin
+Brisel -> Amsterdam
+Paris -> Madrid
+Warszawa -> New York
+
+Kaunas -> Brisel
+Madrid -> Berlin
+Anchorage -> Berlin
+Tallin -> Paris
+New York -> Anchorage
+Warszawa -> Kaunas
+Brisel -> Tallin 
+Paris -> Berlin
+Amsterdam -> Paris
+New York -> Madrid
+Brisel -> New York
+Riga -> Amsterdam
+Madrid -> Tallin
+Berlin -> Warszawa
+
+Anchorage -> Madrid
+Tallin -> Kaunas
+Amsterdam -> Tallin
+New York -> Berlin
+Madrid -> Paris
+Brisel -> Berlin
+Paris -> Riga
+Warszawa -> Berlin
+Anchorage -> Riga
+Berlin -> Tallin
+Riga -> Paris
+New York -> Paris
